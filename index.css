@@ -1,0 +1,167 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.bike {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  margin: 20px 0px;
+  transition: transform 3s ease-in-out; }
+
+.move {
+  transform: translateX(200px); }
+
+.front-wheel,
+.back-wheel {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 68px;
+  border: 6px solid black;
+  border-radius: 50%;
+  transition: transform 3s ease-in-out; }
+  .front-wheel:hover,
+  .back-wheel:hover {
+    transform: rotate(720deg); }
+
+.spin {
+  transform: rotate(720deg); }
+
+.front-wheel {
+  left: 35px; }
+
+.back-wheel {
+  left: 278px; }
+
+.center {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 56px;
+  left: 56px;
+  border-radius: 5px;
+  background-color: black; }
+
+[class*="spoke"] {
+  position: absolute;
+  left: 60px;
+  width: 62px;
+  height: 1px;
+  background-color: black;
+  top: 60px;
+  transform-origin: 0% 50%; }
+
+.spoke-2 {
+  transform: rotate(72deg); }
+
+.spoke-3 {
+  transform: rotate(144deg); }
+
+.spoke-4 {
+  transform: rotate(216deg); }
+
+.spoke-5 {
+  transform: rotate(288deg); }
+
+[class*="frame"] {
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px; }
+
+.frame-top {
+  width: 163px;
+  top: 20px;
+  left: 158px; }
+
+.framechainstay {
+  width: 85px;
+  top: 131px;
+  left: 104px; }
+
+.framefork {
+  top: 75px;
+  left: 270px;
+  width: 123px;
+  transform: rotate(75deg); }
+
+.frameseattube {
+  top: 75px;
+  width: 126px;
+  left: 112px;
+  transform: rotate(75deg); }
+
+.frame-seat-back-wheeel {
+  width: 124px;
+  top: 71px;
+  transform: rotate(114deg);
+  left: 67px; }
+
+.frame-back-diagonal-handle {
+  width: 166px;
+  transform: rotate(140deg);
+  left: 173px;
+  top: 74px; }
+
+.handlebar {
+  position: relative;
+  left: 315px; }
+
+.post {
+  height: 10px;
+  width: 10px;
+  background-color: silver;
+  position: absolute;
+  top: 10px; }
+
+.bar {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: silver;
+  transform: rotate(-20deg);
+  border-radius: 20px; }
+
+.handle {
+  position: absolute;
+  background-color: black;
+  width: 20px;
+  height: 10px;
+  transform: rotate(-20deg);
+  top: 5px;
+  border-radius: 20px; }
+
+.seat {
+  background-color: black;
+  position: absolute;
+  left: 135px;
+  z-index: 3;
+  border-radius: 20px; }
+
+.nose {
+  background-color: black;
+  width: 40px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border-radius: 15px; }
+
+.base {
+  width: 30px;
+  height: 25px; }
+
+.animate {
+  margin: 100px auto;
+  width: 10px;
+  height: 10px;
+  transition: background-color 16s;
+  transition: transform 16s;
+  background-color: red;
+  border-radius: 50%; }
+  .animate:hover {
+    background-color: green;
+    transform: translateX(150px) translateY(150px) translateZ(150px) scale(10); }
